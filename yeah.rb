@@ -9,6 +9,6 @@ name.downcase.each_char do |letter|
 	end	
 	puts "\# Give me #{article} #{letter.upcase}!" 
 end
-random_string = (0...6).map{(65+rand(26)).chr}.join
-puts "What's that spell? #{random_string.capitalize}!"
+name_garble = name.split("").shuffle.join
+puts "What's that spell? #{name_garble.capitalize}!"
 puts "Err... what? Sorry! Goooo #{name.capitalize}!!!"

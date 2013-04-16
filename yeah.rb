@@ -9,6 +9,6 @@ name.downcase.each_char do |letter|
 	end	
 	puts "\# Give me #{article} #{letter.upcase}!" 
 end
-name_garble = name.split("").shuffle.join
-puts "What's that spell? #{name_garble.capitalize}!"
+garbled_name = name.split("").shuffle.join
+puts "What's that spell? #{garbled_name.capitalize}!"
 puts "Err... what? Sorry! Goooo #{name.capitalize}!!!"
